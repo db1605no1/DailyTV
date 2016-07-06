@@ -1,5 +1,6 @@
 package com.example.dailytv.fragments;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,27 +12,15 @@ import android.widget.RadioGroup;
 
 import com.example.dailytv.R;
 import com.example.dailytv.adapter.PlayAdapter;
-import com.example.dailytv.fragments.fragment_play.CartoonFragment;
-import com.example.dailytv.fragments.fragment_play.CultureFragment;
-import com.example.dailytv.fragments.fragment_play.EconomicFragment;
-import com.example.dailytv.fragments.fragment_play.ExploreFragment;
-import com.example.dailytv.fragments.fragment_play.FoodFragment;
-import com.example.dailytv.fragments.fragment_play.FragmentAbroad;
-import com.example.dailytv.fragments.fragment_play.FragmentArtical;
-import com.example.dailytv.fragments.fragment_play.FragmentNews;
-import com.example.dailytv.fragments.fragment_play.FragmentProvince;
-import com.example.dailytv.fragments.fragment_play.FragmentScience;
-import com.example.dailytv.fragments.fragment_play.FragmentSports;
+import com.example.dailytv.beans.Program;
 import com.example.dailytv.fragments.fragment_play.FragmentYangshi;
-import com.example.dailytv.fragments.fragment_play.FunFragment;
-import com.example.dailytv.fragments.fragment_play.LifeFragment;
-import com.example.dailytv.fragments.fragment_play.MovieFragment;
-import com.example.dailytv.fragments.fragment_play.MusicFragment;
-import com.example.dailytv.fragments.fragment_play.RecoderFragment;
-import com.example.dailytv.fragments.fragment_play.WomenFragment;
-import com.example.dailytv.fragments.fragment_play.XijuFragment;
+import com.example.dailytv.utils.ParseJson;
 import com.example.dailytv.views.MyViewPager;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,9 +49,8 @@ public class PlayFragment extends Fragment{
     RadioButton playBt7;
     @Bind(R.id.play_rg)
     RadioGroup playRg;
-
-    private List<Fragment> list = new ArrayList<>();
-
+    private List<ArrayList<Program>> list=new ArrayList<>();
+   private  List<Fragment>  fragments=new ArrayList<>();
     public PlayFragment(){
         // Required empty public constructor
     }
@@ -82,26 +70,34 @@ public class PlayFragment extends Fragment{
     }
 
     private void initData(){
-        list.add(new FragmentYangshi());
-        list.add(new FragmentProvince());
-        list.add(new FragmentNews());
-        list.add(new FragmentSports());
-        list.add(new FragmentScience());
-        list.add(new FragmentArtical());
-        list.add(new FragmentAbroad());
-        list.add(new LifeFragment());
-        list.add(new FoodFragment());
-        list.add(new FunFragment());
-        list.add(new WomenFragment());
-        list.add(new CartoonFragment());
-        list.add(new MovieFragment());
-        list.add(new XijuFragment());
-        list.add(new MusicFragment());
-        list.add(new EconomicFragment());
-        list.add(new CultureFragment());
-        list.add(new ExploreFragment());
-        list.add(new RecoderFragment());
-        PlayAdapter fa = new PlayAdapter(getActivity().getSupportFragmentManager(), list);
+        AssetManager assetManager = getActivity().getAssets();
+        try{
+            InputStream is = assetManager.open("yangshi.txt");
+            BufferedReader  br=new BufferedReader(new InputStreamReader(is));
+            String line="";
+            StringBuffer  sb=new StringBuffer();
+            while( (line=br.readLine())!=null){
+                sb.append(line);
+            }
+
+            br.close();
+             String     json=sb.toString();
+            list.addAll(ParseJson.parseJson(json));
+            for(int i = 0; i < list.size(); i++){
+
+fragments.add(FragmentYangshi.getInstance(list.get(i)));
+
+
+            }
+
+
+
+
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+
+        PlayAdapter fa = new PlayAdapter(getActivity().getSupportFragmentManager(), fragments);
         playViewPager.setAdapter(fa);
         playViewPager.setPagingEnabled(false);
        playRg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){

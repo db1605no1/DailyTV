@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.example.dailytv.R;
 import com.example.dailytv.beans.Program;
 
-import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created by 荒原中的歌声 on 2016/7/6.
@@ -19,10 +19,10 @@ import java.util.List;
 public class RecycleAdapter extends BaseAdapter{
     private Context context;
     private LayoutInflater inflater;
-    private List<Program> list;
+    private ArrayList<Program> list;
 
 
-    public RecycleAdapter(List<Program> list, Context context){
+    public RecycleAdapter(ArrayList<Program> list, Context context){
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
@@ -55,7 +55,6 @@ public class RecycleAdapter extends BaseAdapter{
 
         }
 
-        ih.itemImg.setImageResource(list.get(position).getIconId());
         ih.itemText.setText(list.get(position).getName());
         return convertView;
     }

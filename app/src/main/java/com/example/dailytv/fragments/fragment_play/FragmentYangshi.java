@@ -16,7 +16,6 @@ import com.example.dailytv.adapter.RecycleAdapter;
 import com.example.dailytv.beans.Program;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -27,34 +26,20 @@ import butterknife.ButterKnife;
 public class FragmentYangshi extends Fragment{
     @Bind(R.id.play_recycleView)
     ListView playRecycleView;
-    private List<Program> list = new ArrayList<>();
 
-    private int[] icons = {R.drawable.p2, R.drawable.p3, R.drawable.p4, R.drawable.p5,
-            R.drawable.p6, R.drawable.p7, R.drawable.p8, R.drawable.p9
-            ,R.drawable.p2, R.drawable.p3, R.drawable.p4, R.drawable.p5,
-            R.drawable.p6, R.drawable.p7, R.drawable.p8, R.drawable.p9
-    };
-    private String[] names = {"CCTV1", "CCTV2", "CCTV3", "CCTV4", "CCTV5", "CCTV6", "CCTV7",
-            "CCTV8","CCTV9","CCTV10","CCTV11","CCTV12","CCTV13","CCTV14","CCTV15","CHC电影"};
-    private String[] urls =
-            {"http://ivi.bupt.edu.cn/hls/cctv1.m3u8",
-            "http://ivi.bupt.edu.cn/hls/cctv2.m3u8",
-            "http://ivi.bupt.edu.cn/hls/cctv3.m3u8",
-            "http://ivi.bupt.edu.cn/hls/cctv4.m3u8  ",
-            "http://ivi.bupt.edu.cn/hls/cctv5.m3u8",
-            "http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/cctv7.m3u8",
-              "http://ivi.bupt.edu.cn/hls/cctv8hd.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv9.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv10.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv11.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv12.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv13.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv14.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/cctv15.m3u8",
-                    "http://ivi.bupt.edu.cn/hls/chchd.m3u8",
+private   ArrayList<Program> programs;
+    public  static  FragmentYangshi  getInstance(ArrayList<Program> list ){
 
-            };
+
+        FragmentYangshi   fy=new FragmentYangshi();
+        Bundle  bundle=new Bundle();
+        bundle.putParcelableArrayList("list",list);
+        fy.setArguments(bundle);
+        return   fy;
+    }
+
+
+
 
     public FragmentYangshi(){
         // Required empty public constructor
@@ -70,18 +55,17 @@ public class FragmentYangshi extends Fragment{
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
-        for(int i = 0; i < names.length; i++){
-            Program p = new Program(urls[i], names[i], icons[i]);
-            list.add(p);
-        }
-        RecycleAdapter ra = new RecycleAdapter(list, getActivity());
+        Bundle bundle = this.getArguments();
+
+        programs=bundle.getParcelableArrayList("list");
+        RecycleAdapter ra = new RecycleAdapter(programs, getActivity());
         playRecycleView.setAdapter(ra);
         //设置点击监听
         playRecycleView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 Intent intent = new Intent(getActivity(), PlayActivity.class);
-                intent.putExtra("url", list.get(position).getUrl());
+                intent.putExtra("url", programs.get(position).getUrl());
                 getActivity().startActivity(intent);
 
             }
