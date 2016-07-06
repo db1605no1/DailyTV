@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dailytv.fragments.FirstFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioGroup
+                android:id="@+id/play_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/play_bt1"
+                    style="@style/button_play"
+                    android:text="央视" />
+
+                <RadioButton
+                    android:id="@+id/play_bt2"
+                    style="@style/button_play"
+                    android:text="地方" />
+
+                <RadioButton
+                    android:id="@+id/play_bt3"
+                    style="@style/button_play"
+                    android:text="新闻" />
+
+                <RadioButton
+                    android:id="@+id/play_bt4"
+                    style="@style/button_play"
+                    android:text="体育" />
+
+                <RadioButton
+                    android:id="@+id/play_bt5"
+                    style="@style/button_play"
+                    android:text="科学" />
+
+                <RadioButton
+                    android:id="@+id/play_bt6"
+                    style="@style/button_play"
+                    android:text="艺术" />
+
+                <RadioButton
+                    android:id="@+id/play_bt7"
+                    style="@style/button_play"
+                    android:text="国外" />
+
+                <RadioButton
+                    android:id="@+id/play_bt8"
+                    style="@style/button_play"
+                    android:text="民生" />
+
+                <RadioButton
+                    android:id="@+id/play_bt9"
+                    style="@style/button_play"
+                    android:text="美食" />
+
+                <RadioButton
+                    android:id="@+id/play_bt10"
+                    style="@style/button_play"
+                    android:text="娱乐" />
+
+                <RadioButton
+                    android:id="@+id/play_bt11"
+                    style="@style/button_play"
+                    android:text="女性" />
+
+                <RadioButton
+                    android:id="@+id/play_bt12"
+                    style="@style/button_play"
+                    android:text="动漫" />
+
+                <RadioButton
+                    android:id="@+id/play_bt13"
+                    style="@style/button_play"
+                    android:text="电影" />
+
+                <RadioButton
+                    android:id="@+id/play_bt14"
+                    style="@style/button_play"
+                    android:text="戏剧" />
+
+                <RadioButton
+                    android:id="@+id/play_bt15"
+                    style="@style/button_play"
+                    android:text="音乐" />
+
+                <RadioButton
+                    android:id="@+id/play_bt16"
+                    style="@style/button_play"
+                    android:text="财经" />
+
+                <RadioButton
+                    android:id="@+id/play_bt17"
+                    style="@style/button_play"
+                    android:text="人文地理" />
+
+                <RadioButton
+                    android:id="@+id/play_bt18"
+                    style="@style/button_play"
+                    android:text="探索" />
+
+                <RadioButton
+                    android:id="@+id/play_bt19"
+                    style="@style/button_play"
+                    android:text="纪录" />
+            </RadioGroup>
+        </ScrollView>
+
+        <com.example.dailytv.views.MyViewPager
+            android:id="@+id/play_viewPager"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"></com.example.dailytv.views.MyViewPager>
+    </LinearLayout>
+</FrameLayout>
