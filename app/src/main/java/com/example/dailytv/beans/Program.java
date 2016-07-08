@@ -3,21 +3,23 @@ package com.example.dailytv.beans;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import cn.bmob.v3.BmobObject;
+
 /**
  * Created by 荒原中的歌声 on 2016/7/6.
  */
-public class Program implements Parcelable{
+public class Program  extends BmobObject implements Parcelable {
 
-    private String name;
+    private String tvName;
     private String url;
 
-    public Program(String name, String url){
-        this.name = name;
+    public Program(String tvName, String url){
+        this.tvName = tvName;
         this.url = url;
     }
 
     protected Program(Parcel in){
-        name = in.readString();
+        tvName = in.readString();
         url = in.readString();
     }
 
@@ -33,12 +35,12 @@ public class Program implements Parcelable{
         }
     };
 
-    public String getName(){
-        return name;
+    public String getTVName(){
+        return tvName;
     }
 
-    public void setName(String name){
-        this.name = name;
+    public void setTVName(String tvName){
+        this.tvName = tvName;
     }
 
     public String getUrl(){
@@ -56,7 +58,7 @@ public class Program implements Parcelable{
 
     @Override
     public void writeToParcel(Parcel dest, int flags){
-        dest.writeString(name);
+        dest.writeString(tvName);
         dest.writeString(url);
     }
 }

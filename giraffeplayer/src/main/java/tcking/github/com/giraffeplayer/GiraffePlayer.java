@@ -321,7 +321,7 @@ public class GiraffePlayer {
                         break;
                     case IMediaPlayer.MEDIA_INFO_NETWORK_BANDWIDTH:
                         //显示 下载速度
-//                        Toaster.show("download rate:" + extra);
+              //        Toaster.show("download rate:" + extra);
                         break;
                     case IMediaPlayer.MEDIA_INFO_VIDEO_RENDERING_START:
                         statusChange(STATUS_PLAYING);

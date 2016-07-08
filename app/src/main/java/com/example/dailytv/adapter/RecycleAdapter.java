@@ -55,7 +55,7 @@ public class RecycleAdapter extends BaseAdapter{
 
         }
 
-        ih.itemText.setText(list.get(position).getName());
+        ih.itemText.setText(list.get(position).getTVName());
         return convertView;
     }
 

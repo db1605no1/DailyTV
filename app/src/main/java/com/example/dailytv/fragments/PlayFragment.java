@@ -1,6 +1,5 @@
 package com.example.dailytv.fragments;
 
-import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,13 +13,10 @@ import com.example.dailytv.R;
 import com.example.dailytv.adapter.PlayAdapter;
 import com.example.dailytv.beans.Program;
 import com.example.dailytv.fragments.fragment_play.FragmentYangshi;
+import com.example.dailytv.utils.GetJsonString;
 import com.example.dailytv.utils.ParseJson;
 import com.example.dailytv.views.MyViewPager;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +26,7 @@ import butterknife.ButterKnife;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PlayFragment extends Fragment{
+public class PlayFragment extends MyFragment{
     @Bind(R.id.play_viewPager)
     MyViewPager playViewPager;
     @Bind(R.id.play_bt1)
@@ -49,8 +45,9 @@ public class PlayFragment extends Fragment{
     RadioButton playBt7;
     @Bind(R.id.play_rg)
     RadioGroup playRg;
-    private List<ArrayList<Program>> list=new ArrayList<>();
-   private  List<Fragment>  fragments=new ArrayList<>();
+    private List<ArrayList<Program>> list = new ArrayList<>();
+    private List<Fragment> fragments = new ArrayList<>();
+
     public PlayFragment(){
         // Required empty public constructor
     }
@@ -70,45 +67,21 @@ public class PlayFragment extends Fragment{
     }
 
     private void initData(){
-        AssetManager assetManager = getActivity().getAssets();
-        try{
-            InputStream is = assetManager.open("yangshi.txt");
-            BufferedReader  br=new BufferedReader(new InputStreamReader(is));
-            String line="";
-            StringBuffer  sb=new StringBuffer();
-            while( (line=br.readLine())!=null){
-                sb.append(line);
-            }
-
-            br.close();
-             String     json=sb.toString();
-            list.addAll(ParseJson.parseJson(json));
-            for(int i = 0; i < list.size(); i++){
-
-fragments.add(FragmentYangshi.getInstance(list.get(i)));
-
-
-            }
-
-
-
-
-        }catch(IOException e){
-            e.printStackTrace();
+        String json = GetJsonString.getJsonString(getContext(), "yangshi.txt");
+        list.addAll(ParseJson.parseZhiboJson(json));
+        for(int i = 0; i < list.size(); i++){
+            fragments.add(FragmentYangshi.getInstance(list.get(i)));
         }
-
         PlayAdapter fa = new PlayAdapter(getActivity().getSupportFragmentManager(), fragments);
         playViewPager.setAdapter(fa);
         playViewPager.setPagingEnabled(false);
-       playRg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
-           @Override
+        playRg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
+            @Override
             public void onCheckedChanged(RadioGroup group, int checkedId){
-playViewPager.setCurrentItem(playRg.indexOfChild(getActivity().findViewById(checkedId)));
-
-
-           }
-      });
-   }
+                playViewPager.setCurrentItem(playRg.indexOfChild(getActivity().findViewById(checkedId)));
+            }
+        });
+    }
 
     @Override
     public void onDestroyView(){

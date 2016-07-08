@@ -3,6 +3,8 @@ package com.example.dailytv.utils;
 import android.util.Log;
 
 import com.example.dailytv.beans.Program;
+import com.example.dailytv.beans.Store;
+import com.example.dailytv.beans.TVBean;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,9 +18,8 @@ import java.util.List;
  */
 public class ParseJson{
 
-    public static List<ArrayList<Program>> parseJson(String json){
-        Log.e("ParseJson", json);
-        List<ArrayList<Program> >list = new ArrayList<>();
+    public static List<ArrayList<Program>> parseZhiboJson(String json){
+        List<ArrayList<Program>> list = new ArrayList<>();
         try{
             JSONObject jsonObject = new JSONObject(json);
             JSONArray classify = jsonObject.getJSONArray("classify");
@@ -28,19 +29,75 @@ public class ParseJson{
                 JSONArray progamList = programArray.getJSONArray("programs");
                 for(int j = 0; j < progamList.length(); j++){
                     JSONObject programJson = progamList.getJSONObject(j);
-                    String name = programJson.getString("name");
+                    String tvName = programJson.getString("name");
                     String url = programJson.getString("url");
-                    list0.add(new Program(name, url));
+                    list0.add(new Program(tvName, url));
                 }
                 list.add(list0);
-
             }
         }catch(JSONException e){
             e.printStackTrace();
         }
-
-    Log.e("ParseJson", "list.size():" + list.size());
+        Log.e("ParseJson", "list.size():" + list.size());
         return list;
+    }
 
+    public static  List<Store> parseStoreJson(String str){
+        List<Store> list = new ArrayList<>();
+        try{
+            JSONObject object = new JSONObject(str);
+            JSONArray items = object.getJSONArray("items");
+            for(int i = 0; i < items.length(); i++){
+                ArrayList<Program> list0 = new ArrayList<>();
+                JSONObject jsonObject = items.getJSONObject(i);
+                //String imgUrl = jsonObject.getString("imgUrl");
+                String text = jsonObject.getString("text");
+                //Store store=new Store(imgUrl,text);
+                JSONArray array = jsonObject.getJSONArray("programs");
+                for(int j = 0; j < array.length(); j++){
+                    JSONObject programJson = array.getJSONObject(j);
+                    String tvName = programJson.getString("name");
+                    String url = programJson.getString("url");
+                    list0.add(new Program(tvName, url));
+                }
+                Store store = new Store(text, list0);
+                list.add(store);
+            }
+            return list;
+        }catch(JSONException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static List<TVBean> parseJson2TVBean(String json) {
+        List<TVBean> list = new ArrayList<>();
+        try {
+            JSONObject jo = new JSONObject(json);
+            JSONArray classifyArr = jo.getJSONArray("classify");
+            for (int i = 0; i < classifyArr.length(); i++) {
+                TVBean tvBean = new TVBean();
+                JSONObject classify = classifyArr.getJSONObject(i);
+                String title = classify.getString("title");
+                tvBean.setTitle(title);
+                JSONArray programsArr = classify.getJSONArray("programs");
+                List<TVBean.ProgramsBean> proBeansList = new ArrayList<>();
+                for (int j = 0; j < programsArr.length(); j++) {
+                    TVBean.ProgramsBean programsBean = new TVBean.ProgramsBean();
+                    JSONObject programs = programsArr.getJSONObject(j);
+                    String name = programs.getString("name");
+                    String url = programs.getString("url");
+                    programsBean.setName(name);
+                    programsBean.setUrl(url);
+                    proBeansList.add(programsBean);
+                }
+                list.add(tvBean);
+            }
+            return list;
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

@@ -14,6 +14,7 @@ import com.example.dailytv.PlayActivity;
 import com.example.dailytv.R;
 import com.example.dailytv.adapter.RecycleAdapter;
 import com.example.dailytv.beans.Program;
+import com.example.dailytv.fragments.MyFragment;
 
 import java.util.ArrayList;
 
@@ -23,7 +24,7 @@ import butterknife.ButterKnife;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentYangshi extends Fragment{
+public class FragmentYangshi extends MyFragment{
     @Bind(R.id.play_recycleView)
     ListView playRecycleView;
 
@@ -55,7 +56,7 @@ private   ArrayList<Program> programs;
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
-        Bundle bundle = this.getArguments();
+        final Bundle bundle = this.getArguments();
 
         programs=bundle.getParcelableArrayList("list");
         RecycleAdapter ra = new RecycleAdapter(programs, getActivity());
@@ -65,7 +66,10 @@ private   ArrayList<Program> programs;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 Intent intent = new Intent(getActivity(), PlayActivity.class);
-                intent.putExtra("url", programs.get(position).getUrl());
+                Bundle  bundle1=new Bundle();
+                bundle1.putString("tvName",programs.get(position).getTVName());
+                bundle1.putString("url", programs.get(position).getUrl());
+                  intent.putExtras(bundle1);
                 getActivity().startActivity(intent);
 
             }

@@ -11,7 +11,7 @@ import com.example.dailytv.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FindFragment extends Fragment{
+public class FindFragment extends MyFragment{
 
     public FindFragment(){
         // Required empty public constructor

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Users\\loe\\AndroidStudioProjects\\qianfengDemo\\autoadaptation\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\Users\\loe\\AndroidStudioProjects\\qianfengDemo\\autoadaptation\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\DailyTV\\autoadaptation\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\DailyTV\\autoadaptation\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    }
+]

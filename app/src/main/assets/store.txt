@@ -1,0 +1,406 @@
+﻿{
+	"items":[
+	   {"imgUrl":"","text":"排行榜",  "programs": [
+                                                  {
+                                                      "name": "CCTV1",
+                                                      "url": "http://59.46.18.133:8114/lntvch/01000000000000000000000000000072?Fsv_otype=1&FvSeid=&Fsv_filetype=&Fsv_ctype=&Fsv_cid=&Fsv_chan_hls_se_idx=&Fsv_rate_id=&Fsv_TBt=&Fsv_ShiftEnable=&Fsv_ShiftTsp=&Fsv_SV_PARAM1=&Provider_id=&Pcontent_id="
+                                                  },
+                                                  {
+                                                      "name": "CCTV2",
+                                                      "url": "http://110.77.0.182:1935/dvr/1002.stream/playlist.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http://183.207.249.7/PLTV/3/224/3221225588/index.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http://110.77.0.182:1935/dvr/1024.stream/playlist.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http://183.207.249.15/PLTV/3/224/3221225644/index.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http://183.207.249.7/PLTV/3/224/3221225548/index.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV7",
+                                                      "url": "http://59.46.18.133:8114/lntvch/01000000000000000000000000000082?Fsv_otype=1&FvSeid=&Fsv_filetype=&Fsv_ctype=&Fsv_cid=&Fsv_chan_hls_se_idx=&Fsv_rate_id=&Fsv_TBt=&Fsv_ShiftEnable=&Fsv_ShiftTsp=&Fsv_SV_PARAM1=&Provider_id=&Pcontent_id="
+                                                  },
+                                                  {
+                                                      "name": "CCTV8",
+                                                      "url": "http://110.77.0.182:1935/dvr/1006.stream/playlist.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV9",
+                                                      "url": "http://110.77.0.182:1935/dvr/1025.stream/playlist.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV10",
+                                                      "url": "http://59.46.18.133:8114/lntvch/01000000000000000000000000000087?Fsv_otype=1&FvSeid=&Fsv_filetype=&Fsv_ctype=&Fsv_cid=&Fsv_chan_hls_se_idx=&Fsv_rate_id=&Fsv_TBt=&Fsv_ShiftEnable=&Fsv_ShiftTsp=&Fsv_SV_PARAM1=&Provider_id=&Pcontent_id="
+                                                  },
+                                                  {
+                                                      "name": "CCTV11",
+                                                      "url": "http://59.46.18.133:8114/lntvch/01000000000000000000000000000089?Fsv_otype=1&FvSeid=&Fsv_filetype=&Fsv_ctype=&Fsv_cid=&Fsv_chan_hls_se_idx=&Fsv_rate_id=&Fsv_TBt=&Fsv_ShiftEnable=&Fsv_ShiftTsp=&Fsv_SV_PARAM1=&Provider_id=&Pcontent_id="
+                                                  },
+                                                  {
+                                                      "name": "CCTV12",
+                                                      "url": "http://59.46.18.133:8114/lntvch/01000000000000000000000000000091?Fsv_otype=1&FvSeid=&Fsv_filetype=&Fsv_ctype=&Fsv_cid=&Fsv_chan_hls_se_idx=&Fsv_rate_id=&Fsv_TBt=&Fsv_ShiftEnable=&Fsv_ShiftTsp=&Fsv_SV_PARAM1=&Provider_id=&Pcontent_id="
+                                                  },
+                                                  {
+                                                      "name": "CCTV13",
+                                                      "url": "http://www.szmgiptv.com:14437/hls/35.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV14",
+                                                      "url": "http://www.szmgiptv.com:14437/hls/31.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV15",
+                                                      "url": "http://59.46.18.133:8114/lntvch/01000000000000000000000000000098?Fsv_otype=1&FvSeid=&Fsv_filetype=&Fsv_ctype=&Fsv_cid=&Fsv_chan_hls_se_idx=&Fsv_rate_id=&Fsv_TBt=&Fsv_ShiftEnable=&Fsv_ShiftTsp=&Fsv_SV_PARAM1=&Provider_id=&Pcontent_id="
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"新闻专区", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"精品集锦", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"电影", "programs": [
+                                                {
+                                                    "name": "江苏体育休闲",
+                                                    "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                },
+                                                {
+                                                    "name": "爱奇艺体育",
+                                                    "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV3",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV4",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV5",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV6",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                }
+                                            ]},
+	   {"imgUrl":"","text":"电视剧", "programs": [
+                                                 {
+                                                     "name": "江苏体育休闲",
+                                                     "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "爱奇艺体育",
+                                                     "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV3",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV4",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV5",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV6",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                 }
+                                             ]},
+	   {"imgUrl":"","text":"综艺", "programs": [
+                                                {
+                                                    "name": "江苏体育休闲",
+                                                    "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                },
+                                                {
+                                                    "name": "爱奇艺体育",
+                                                    "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV3",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV4",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV5",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV6",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                }
+                                            ]},
+	   {"imgUrl":"","text":"卡通动漫", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"游戏专区", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"劲爆体育", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"纪录片", "programs": [
+                                                 {
+                                                     "name": "江苏体育休闲",
+                                                     "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "爱奇艺体育",
+                                                     "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV3",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV4",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV5",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                 },
+                                                 {
+                                                     "name": "CCTV6",
+                                                     "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                 }
+                                             ]},
+	   {"imgUrl":"","text":"微影随行", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"音乐MV", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]},
+	   {"imgUrl":"","text":"专题", "programs": [
+                                                {
+                                                    "name": "江苏体育休闲",
+                                                    "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                },
+                                                {
+                                                    "name": "爱奇艺体育",
+                                                    "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV3",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV4",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV5",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                },
+                                                {
+                                                    "name": "CCTV6",
+                                                    "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                }
+                                            ]},
+	   {"imgUrl":"","text":"美女直播", "programs": [
+                                                  {
+                                                      "name": "江苏体育休闲",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c20_ct_jstv6_jsty_smooth_t10/c20_ct_jstv6_jsty_smooth_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "爱奇艺体育",
+                                                      "url": "http: //106.120.175.80: 55336/tslive/c17_lb_tiyu_high_t10/c17_lb_tiyu_high_t10.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV3",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv3.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV4",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv4.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV5",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv5.m3u8"
+                                                  },
+                                                  {
+                                                      "name": "CCTV6",
+                                                      "url": "http: //ivi.bupt.edu.cn/hls/cctv6hd.m3u8"
+                                                  }
+                                              ]}
+	]     
+}
+
+

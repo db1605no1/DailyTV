@@ -21,6 +21,7 @@
                 android:layout_height="wrap_content">
 
                 <RadioButton
+                    android:checked="true"
                     android:id="@+id/play_bt1"
                     style="@style/button_play"
                     android:text="央视" />
