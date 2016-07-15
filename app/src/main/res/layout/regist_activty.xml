@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/register_toolbar"
+    android:background="@color/red"
+    ></android.support.v7.widget.Toolbar>
+<EditText
+    android:drawableLeft="@drawable/name"
+    android:padding="@dimen/x20"
+    android:textSize="@dimen/x36"
+    android:layout_margin="@dimen/x20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/username1"
+    android:hint="@string/hint_name"
+    android:background="@android:drawable/edit_text"
+
+    />
+    <EditText
+        android:drawableLeft="@drawable/key"
+        android:textSize="@dimen/x36"
+        android:layout_margin="@dimen/x20"
+        android:padding="@dimen/x20"
+        android:background="@android:drawable/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password1"
+        android:hint="@string/hint_pwd"
+
+
+        />
+
+
+<ImageButton
+
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/x20"
+    android:padding="@dimen/x20"
+    android:background="@drawable/button_shape"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/register2"
+    android:onClick="register2"
+android:src="@drawable/resister"
+    />
+
+
+
+
+
+
+
+</LinearLayout>
