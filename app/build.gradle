@@ -13,7 +13,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,11 +29,22 @@ dependencies {
     compile 'com.android.support:support-v4:23.4.0'
     compile project(':giraffeplayer')
     compile project(':ijkplayer-java')
-    compile files('libs/Bmob_Push_V0.9beta_20160520.jar')
+    compile files('libs/Bmob_Push_V1.0.0beta_20160627.jar')
     compile files('libs/BmobSDK_V3.4.7_0527.jar')
     compile files('libs/okhttp-3.2.0.jar')
     compile files('libs/okio-1.7.0.jar')
     compile project(':autoadaptation')
-
     compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.1'
+
+    compile 'com.alibaba:fastjson:1.2.13'
+    compile files('libs/ShareSDK-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-QQ-2.7.4.jar')
+    compile files('libs/ShareSDK-QZone-2.7.4.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.4.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.4.jar')
+    compile files('libs/MobCommons-2016.0707.1708.jar')
+    compile files('libs/MobTools-2016.0707.1708.jar')
+
 }
